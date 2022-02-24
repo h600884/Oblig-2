@@ -92,7 +92,6 @@ public abstract class OrdnetListeADTTest {
 	 
 	@Test
 	public final void leggTilOgfjernMedDuplikater() {
-		// ... Fyll ut med � legge til passende elementer
 		  liste.leggTil(e0);
 		  liste.leggTil(e0);
 		  liste.leggTil(e1);
@@ -130,9 +129,7 @@ public abstract class OrdnetListeADTTest {
 
 	}
 
-	/**
-	 * Tester om listen med verdier ikke er tom.
-	 */
+	
 	@Test
 	public final void erIkkeTom() {
 		liste.leggTil(e0);
