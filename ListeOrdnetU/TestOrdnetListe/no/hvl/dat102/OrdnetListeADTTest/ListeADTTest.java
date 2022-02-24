@@ -82,7 +82,7 @@ public abstract class ListeADTTest {
 	}
 
 	@Test
-	public final void viseOrdnetIkkeOkende() {
+	public final void viseOrdnetIkkeØkende() {
 		try {
 			liste.leggTil(e1);
 			liste.leggTil(e2);
@@ -107,7 +107,7 @@ public abstract class ListeADTTest {
 	@Test
 	public final void leggTilOgfjernMedDuplikater() {
 		try {
-			// ... Fyll ut med ï¿½ legge til passende elementer
+			// ... Fyll ut med å legge til passende elementer
 
 			assertEquals(e0, liste.fjern(e0));
 			assertEquals(e1, liste.fjern(e1));
@@ -155,7 +155,7 @@ public abstract class ListeADTTest {
 	}
 
 	/**
-	 * Tester om leggTil-fjern pï¿½ en tom liste gir en tom liste.
+	 * Tester om leggTil-fjern på en tom liste gir en tom liste.
 	 */
 	@Test
 	public final void leggTilFjernErTom() {
@@ -163,13 +163,13 @@ public abstract class ListeADTTest {
 	}
 
 	/**
-	 * Prï¿½ver ï¿½ ta ut et element fra en tom liste.
+	 * Prøver å ta ut et element fra en tom liste.
 	 * 
 	 * ... Fyll ut
 	 */
 
 	/**
-	 * Forsï¿½k pï¿½ ï¿½ returnere fï¿½rste fra tom liste
+	 * Forsøk på å returnere første fra tom liste
 	 * 
 	 * @exception EmptyCollectionException expected exception
 	 */
