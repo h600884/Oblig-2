@@ -24,8 +24,6 @@ public class DobbelKjedetOrdnetListe<T extends Comparable<T>> implements DobbelK
 
 		antall = 0;
 	
-		// Kjeding
-		//TODO
 	}
 
 	@Override
@@ -35,7 +33,7 @@ public class DobbelKjedetOrdnetListe<T extends Comparable<T>> implements DobbelK
 		while ((el.compareTo(aktuell.getElement()) > 0)) {
 			aktuell = aktuell.getNeste();
 		}
-		// Legg inn foran aktuell
+
 		nyNode.setNeste(aktuell);
 		nyNode.setForrige(aktuell.getForrige());
 		aktuell.getForrige().setNeste(nyNode);
@@ -61,10 +59,6 @@ public class DobbelKjedetOrdnetListe<T extends Comparable<T>> implements DobbelK
 
 	}
 
-	/*
-	 * Returnerer referansen til noden hvis el fins, ellers returneres
-	 * null-referansen
-	 */
 	private DobbelNode<T> finn(T el) {
 		DobbelNode<T> node = null;
 		DobbelNode<T> p = null;
